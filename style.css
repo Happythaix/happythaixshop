@@ -1,0 +1,40 @@
+#buttonvideo,
+#tabledata,
+#imagefile,
+#vdoss,
+#data101 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #imagefile {
+    display: block;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  #myModal .modal-content form .input-group input,
+  #myModal .modal-content form .input-group textarea,
+  #myModal .modal-content form .input-group select {
+    font-size: 14px;
+  }
+}
+
+#vdoss {
+  position: relative;
+}
+
+#vdoss::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
